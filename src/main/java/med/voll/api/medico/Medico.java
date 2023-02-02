@@ -1,7 +1,10 @@
 package med.voll.api.medico;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import med.voll.api.endereco.Endereco;
 
 @Table(name = "medicos")
@@ -23,8 +26,10 @@ public class Medico {
     private Especialidade especialidade;
     @Embedded
     private Endereco endereco;
+    private Boolean ativo;
 
     public Medico(DadosCadastroMedico dadosCadastroMedico) {
+        this.ativo = true;
         this.nome = dadosCadastroMedico.nome();
         this.email = dadosCadastroMedico.email();
         this.telefone = dadosCadastroMedico.telefone();
@@ -43,6 +48,9 @@ public class Medico {
         if (dadosAtualizacaoMedico.endereco() != null) {
             this.endereco.atualizaInformacao(dadosAtualizacaoMedico.endereco());
         }
-   }
+    }
 
+    public void excluir() {
+        this.ativo = false;
+    }
 }
