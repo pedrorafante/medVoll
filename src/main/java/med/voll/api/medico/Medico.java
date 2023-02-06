@@ -46,7 +46,7 @@ public class Medico {
             this.telefone = dadosAtualizacaoMedico.telefone();
         }
         if (dadosAtualizacaoMedico.endereco() != null) {
-            this.endereco.atualizaInformacao(dadosAtualizacaoMedico.endereco());
+            this.endereco.atualizarInformacao(dadosAtualizacaoMedico.endereco());
         }
     }
 
