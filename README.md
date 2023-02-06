@@ -18,7 +18,7 @@ http://localhost:8080/pacientes
 http://localhost:8080/medicos
 ```
 
-Criei uma collection, para testar no Postman:
+Criei uma collection, para testar no Postman: <a href="https://github.com/pedrorafante/medVoll/blob/main/src/main/resources/collection/VollMed.postman_collection.json"> Collection </a>
 
 ---
 
