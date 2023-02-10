@@ -59,6 +59,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - **[Hibernate](https://hibernate.org)**
 - **[Flyway](https://flywaydb.org)**
 - **[Lombok](https://projectlombok.org)**
+- **[Postman](https://www.postman.com)**
 
 ---
 
