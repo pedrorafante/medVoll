@@ -62,7 +62,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - **[Flyway](https://flywaydb.org)**
 - **[Lombok](https://projectlombok.org)**
 - **[Postman](https://www.postman.com)**
-
+- **[JWT (JSON Web Token)](https://jwt.io/)**
 ---
 
 ## 📝 Licença
