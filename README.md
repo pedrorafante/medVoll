@@ -20,6 +20,8 @@ http://localhost:8080/medicos
 
 Criei uma collection, para testar no Postman: <a href="https://github.com/pedrorafante/medVoll/blob/main/src/main/resources/collection/VollMed.postman_collection.json"> Collection </a>
 
+Sempre antes de chamar as APIs chamar a api de "Efetuar login", para gerar o token, token tem válidade de 2 horas.
+
 ---
 
 ## ⚙️ Funcionalidades
@@ -29,7 +31,7 @@ Criei uma collection, para testar no Postman: <a href="https://github.com/pedror
 - [ ] Agendamento de consultas(em breve);
 - [ ] Cancelamento de consultas(em breve);
 - [ ] Documentação Swagger(em breve);
-- [ ] Segurança(em breve);
+- [x] Segurança JWT;
 - [ ] Testes unitários(em breve);
 
 ---
