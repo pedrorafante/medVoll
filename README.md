@@ -13,7 +13,9 @@ Gerar os fontes como todo projeto _Maven_
 mvn clean install
 ```
 Para validar se a aplicação inicializou com sucesso é necessário chamar os endpoints criados;
+Obs.: Antes de rodar qualquer endpoint é necessário gerar um token no endpoint Login, na collection já manda o token para os outros endpoints.
 ```bash
+http://localhost:8080/login
 http://localhost:8080/pacientes
 http://localhost:8080/medicos
 http://localhost:8080/consultas
@@ -30,7 +32,7 @@ Sempre antes de chamar as APIs chamar a api de "Efetuar login", para gerar o tok
 - [x] CRUD de médicos;
 - [x] CRUD de pacientes;
 - [x] Agendamento de consultas;
-- [ ] Cancelamento de consultas(em breve);
+- [x] Cancelamento de consultas;
 - [ ] Documentação Swagger(em breve);
 - [x] Segurança JWT;
 - [ ] Testes unitários(em breve);
