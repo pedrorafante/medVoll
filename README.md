@@ -16,6 +16,7 @@ Para validar se a aplicação inicializou com sucesso é necessário chamar os e
 ```bash
 http://localhost:8080/pacientes
 http://localhost:8080/medicos
+http://localhost:8080/consultas
 ```
 
 Criei uma collection, para testar no Postman: <a href="https://github.com/pedrorafante/medVoll/blob/main/src/main/resources/collection/VollMed.postman_collection.json"> Collection </a>
@@ -28,7 +29,7 @@ Sempre antes de chamar as APIs chamar a api de "Efetuar login", para gerar o tok
 
 - [x] CRUD de médicos;
 - [x] CRUD de pacientes;
-- [ ] Agendamento de consultas(em breve);
+- [x] Agendamento de consultas;
 - [ ] Cancelamento de consultas(em breve);
 - [ ] Documentação Swagger(em breve);
 - [x] Segurança JWT;
@@ -63,6 +64,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - **[Lombok](https://projectlombok.org)**
 - **[Postman](https://www.postman.com)**
 - **[JWT (JSON Web Token)](https://jwt.io/)**
+- **SOLID Padrão de desenvolvimento**
 ---
 
 ## 📝 Licença
