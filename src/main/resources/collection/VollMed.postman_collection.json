@@ -44,6 +44,43 @@
 			"response": []
 		},
 		{
+			"name": "Cadastra uma Consulta",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nome\": \"Novo Cadastro\",\r\n\"email\": \"sanfonaa@voll.med\",\r\n\"crm\": \"45612\",\r\n\"especialidade\": \"ORTOPEDIA\",\r\n\"telefone\": \"3213213\",\r\n\"endereco\": {\r\n    \"logradouro\": \"rua 1\",\r\n    \"bairro\": \"bairro\",\r\n    \"cep\": \"12345678\",\r\n    \"cidade\": \"Brasilia\",\r\n    \"uf\": \"DF\",\r\n    \"numero\": \"1\",\r\n    \"complemento\": \"complemento\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Cadastro de Paciente",
 			"request": {
 				"auth": {
@@ -445,6 +482,43 @@
 					"path": [
 						"pacientes",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancelar uma consulta",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"idConsulta\": 1,\r\n\"motivoCancelamento\": \"PACIENTE_DESISTIU\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/consultas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultas"
 					]
 				}
 			},
