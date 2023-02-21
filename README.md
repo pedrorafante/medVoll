@@ -21,6 +21,11 @@ http://localhost:8080/medicos
 http://localhost:8080/consultas
 ```
 
+Para visualizar os endpoints melhor e e até testar sem a necessidade do Postman, basta entrar no link (Documentação das APIs):
+```bash
+http://localhost:8080/swagger-ui/index.html#/
+```
+
 Criei uma collection, para testar no Postman: <a href="https://github.com/pedrorafante/medVoll/blob/main/src/main/resources/collection/VollMed.postman_collection.json"> Collection </a>
 
 Sempre antes de chamar as APIs chamar a api de "Efetuar login", para gerar o token, token tem válidade de 2 horas.
@@ -33,7 +38,7 @@ Sempre antes de chamar as APIs chamar a api de "Efetuar login", para gerar o tok
 - [x] CRUD de pacientes;
 - [x] Agendamento de consultas;
 - [x] Cancelamento de consultas;
-- [ ] Documentação Swagger(em breve);
+- [x] Documentação Swagger;
 - [x] Segurança JWT;
 - [ ] Testes unitários(em breve);
 
